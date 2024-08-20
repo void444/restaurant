@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader">
+        <img src="	https://multim-html.vercel.app/assets/img/restaurent/logo.svg" alt="">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.querySelector('.preloader');
+            const content = document.querySelector('.content');
+
+            // Simulate a delay of 2 seconds (2000 milliseconds) before hiding the preloader
+            setTimeout(function () {
+                preloader.style.display = 'none';
+                content.style.display = 'block';
+            }, 1000); // Change 2000 to the desired delay time in milliseconds
+        });
+    </script>
+
+    <!-- navbar one -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar1">
+            <div class="container">
+                <a class="navbar-brand navbar-logo" href="#" ; style="margin-left: 6%;">
+                    <img src="	https://multim-html.vercel.app/assets/img/restaurent/logo.svg" alt=""
+                        style="height: 3rem;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto" style="margin-left: 20rem;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a> -->
+                        <!-- <div class="dropdown-content">
+                                <div class="" style="display: flex;gap: 350px;">
+                                    <div style="display: flex; gap: 20px; flex-direction: column;margin-top: 20px;">
+                                        <div class=""> <a href="" class="text-decoration-none"
+                                                style="color: black; margin-left: 30px; font-size: 30px;">cheps</a>
+                                        </div>
+                                        <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                        <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                        <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                style="color: #78778f; margin-left: 30px;">cheps</a></div>
+
+                                        <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                    </div>
+                                    <div class="">
+                                        <div style="display: flex; gap: 20px; flex-direction: column;margin-top: 20px;">
+                                            <div class=""> <a href="" class="text-decoration-none"
+                                                    style="color: black; margin-left: 30px; font-size: 30px;">cheps</a>
+                                            </div>
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div style="display: flex; gap: 20px; flex-direction: column;margin-top: 20px;">
+                                            <div class=""> <a href="" class="text-decoration-none"
+                                                    style="color: black; margin-left: 30px; font-size: 30px;">cheps</a>
+                                            </div>
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+
+                                            <div class="dropitems"> <a href="" class="text-decoration-none"
+                                                    style="color: #78778f; margin-left: 30px;">cheps</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        <!-- </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-bag"></i> -->
+                        <!-- <span class="span"></span> -->
+                        <!-- </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div type="button" class="btn">Get Started</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- navbar two -->
+    <div class="nav2">
+        <div class="top-bar" style="display: flex; flex-direction: row;">
+            <div><img src="	https://multim-html.vercel.app/assets/img/restaurent/logo.svg" alt=""></div>
+            <!-- <div class="login1">login</div>
+            <div class="bag">
+                <i class=" fas1 fas fa-shopping-bag"></i>
+                <span class="span1"></span>
+            </div> -->
+            <div class="menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" data-bs-backdrop="false"
+                aria-labelledby="offcanvasTopLabel" style="margin-top: 60px;">
+                <div class="offcanvas-body" style="background: #ffffff; height: auto; overflow-y: visible;">
+
+
+                    <div id="accordion accordion1">
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    Home<span class="toggle">+</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#nestedOne">
+                                                Column One<span class="toggle">+</span>
+                                            </button>
+                                            <div id="nestedOne" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul style="list-style: none;">
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#nestedTwo">
+                                                Column 2<span class="toggle">+</span>
+                                            </button>
+                                            <div id="nestedTwo" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul style="list-style: none;">
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#nestedThree">
+                                                Column 3<span class="toggle">+</span>
+                                            </button>
+                                            <div id="nestedThree" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul style="list-style: none;">
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#nestedFour">
+                                                Column 4<span class="toggle">+</span>
+                                            </button>
+                                            <div id="nestedFour" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul style="list-style: none;">
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Pages<span class="toggle">+</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#nestedOne1">
+                                                Column One<span class="toggle">+</span>
+                                            </button>
+                                            <div id="nestedOne1" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul style="list-style: none;">
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#nestedTwo1">
+                                                Column 2<span class="toggle">+</span>
+                                            </button>
+
+                                            <div id="nestedTwo1" class="accordion-collapse1 collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul style="list-style: none;">
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                        <li>adjkkjahaksjhjsa</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo11" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Menu<span class="toggle">+</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo11" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse">
+                                                Column One
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="accordion-button nested" type="button"
+                                                data-bs-toggle="collapse">
+                                                Column 2
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="index.html" class="text-decoration-none" style="color:black">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Home
+                                    </button></a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="menu.html" class="text-decoration-none" style="color:black">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Menu
+                                    </button></a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="contactus.html" class="text-decoration-none" style="color:black">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Contact Us
+                                    </button></a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="gallery.html" class="text-decoration-none" style="color:black">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Gallery
+                                    </button></a>
+                            </h2>
+                        </div>
+                    </div>
+
+
+                    <!-- <script>
+                        const buttons = document.querySelectorAll('.accordion-button');
+                        buttons.forEach(button => {
+                            button.addEventListener('click', function () {
+                                const toggle = this.querySelector('.toggle');
+                                const expanded = this.getAttribute('aria-expanded');
+
+                                if (expanded === 'true') {
+                                    toggle.textContent = '-';
+                                } else {
+                                    toggle.textContent = '+';
+                                }
+                            });
+                        });
+                    </script> -->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            const bars = document.querySelectorAll('.bar');
+            bars.forEach(bar => {
+                bar.classList.toggle('change');
+            });
+        }
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 10) {
+                    navbar.style.backgroundColor = 'white';
+
+                } else {
+                    navbar.style.backgroundColor = 'white'; /* Initial color when not scrolling */
+                }
+            });
+        });
+
+    </script>
+
+    <!-- first hero section -->
+
+
+    <div class="container-fluid hero">
+        <div class="herosection">
+            <div class="herotext">
+                <div class="herotext1">ENJOY YOUR MEAL</div>
+                <div class="herotext2">We serve <br> delicious and <br> good food</div>
+                <div class="herotext3">We help you to create innovations and we transform ideas into<br>
+                    reality. The innovation is often identified with new technology.</div>
+                <div class="herobuttons">
+                    <div type="button" class="btn1" style="display: flex; gap: 10px;">
+                        <div>Book a Table</div>
+                        <div class="button1"><i class="fas fa-angle-double-right"></i></div>
+                    </div>
+                    <div type="button" class="btn11">
+                        <div class="svg"><i class="fas fa-play"></i></div>
+                        <span class="videanimation">
+                            <span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="heroimage">
+                <div>
+                    <div
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                        <div class="heroimage1">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img.png
+                " alt="">
+                        </div>
+                        <div class="images">
+                            <div class="image1">
+                                <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img1.png"
+                                    alt="">
+                            </div>
+
+                            <div class="image2">
+                                <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img2.png"
+                                    alt="">
+                            </div>
+                            <div class="image3">
+                                <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img3.png"
+                                    alt="">
+                            </div>
+
+                            <div class="image4">
+                                <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img4.png"
+                                    alt="">
+                            </div>
+
+                            <div class="image5">
+                                <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img5.png"
+                                    alt="">
+                            </div>
+
+                            <div class="image6">
+                                <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img6.png"
+                                    alt="">
+                            </div>
+
+                            <div class="image7">
+                                <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img7.png"
+                                    alt="">
+                            </div>
+                            <div class="image8">
+                                <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img8.png"
+                                    alt="">
+                            </div>
+                            <div class="image9">
+                                <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img9.png"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <script>
+                            window.addEventListener('scroll', function () {
+                                const scrollTop = window.scrollY;
+                                const shakingElement = document.querySelector('.images');
+                                const shakeAmount = 10;
+
+                                shakingElement.style.transform = `translate(-50%, -50%) scale(${1 + Math.sin(scrollTop / 50) * (shakeAmount / 100)})`;
+                            });
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- second hero section -->
+
+    <div class="rotatingimage" style="background-color: rgb(237, 234, 231);height: 43rem;">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <!-- <div class="secondimage" style="margin-top: 150px;"><img
+                        src="https://multim-html.vercel.app/assets/img/restaurent/image-box2.png" alt=""></div>
+            </div> -->
+                    <div class="secondimage">
+
+
+
+                        <div class="headerimage">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/image-box2.png" alt="">
+                        </div>
+
+                        <div class="outerimage"><img
+                                src="https://multim-html.vercel.app/assets/img/restaurent/image-box1.png" alt=""></div>
+
+                    </div>
+                    <script>
+
+                        window.addEventListener('scroll', function () {
+                            const scrollTop = window.scrollY;
+                            const rotatingElement = document.querySelector('.outerimage');
+                            const rotationAmount = scrollTop * 0.03;
+
+                            rotatingElement.style.transform = `rotate(${rotationAmount}deg)`;
+                        });
+                    </script>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="herosecondtext2">
+                        <div class="since">SINCE 2010</div>
+                        <div class="about">About us and <br>
+                            our delicious food</div>
+                        <div class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra
+                            maecenas accumsan lacus vel facilisis.</div>
+                    </div>
+                    <div type="button" class="readmore" style="display: flex; gap: 10px;">
+                        <div>Read More</div>
+                        <div class="readmore1"><i class="fas fa-angle-double-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="thirdherosection" style="display: flex; flex-direction: row;">
+            <div class="thirdlefttext">
+                <div class="since">RECIEPES</div>
+                <div class="mostpopular">Most popular<br>
+                    delicious items</div>
+            </div>
+            <div type="button" class="readmore2">
+                <div>View All Items</div>
+                <div class="readmore1"><i class="fas fa-angle-double-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="display: flex; flex-direction: column;">
+                <div class="col1">
+                    <div class="plate"><img src="https://multim-html.vercel.app/assets/img/restaurent/item1.png" alt="">
+                    </div>
+                    <div class="platetext">
+                        <div class="platelowertext" style="display: flex; flex-direction: column;">
+                            <div class="dollor">$5.00</div>
+                            <a href="menudetails.html" class="text-decoration-none">
+                                <h2 class="fish">Fish Mexico Cuise</h2>
+                            </a>
+                            <div class="SEO">SEO is made up of multiple different elements, and knowing what they
+                            </div>
+                            <a href="" class="text-decoration-none" style="color: #78778f;">
+                                <div class="addtocart">Add To Cart</div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col1">
+                    <div class="plate1"><img src="https://multim-html.vercel.app/assets/img/restaurent/item2.png" alt="">
+                    </div>
+                    <div class="platetext">
+                        <div class="platelowertext" style="display: flex; flex-direction: column;">
+                            <div class="dollor">$5.00</div>
+                            <a href="menudetails.html" class="text-decoration-none">
+                                <h2 class="fish">Fish Mexico Cuise</h2>
+                            </a>
+                            <div class="SEO">SEO is made up of multiple different elements, and knowing what they</div>
+                            <a href="" class="text-decoration-none" style="color: #78778f;">
+                                <div class="addtocart">Add To Cart</div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col1">
+                    <div class="plate2">
+                        <img src="	https://multim-html.vercel.app/assets/img/restaurent/item3.png" alt="">
+                    </div>
+                    <div class="platetext">
+                        <div class="platelowertext" style="display: flex; flex-direction: column;">
+                            <div class="dollor">$5.00</div>
+                            <a href="menudetails.html" class="text-decoration-none">
+                                <h2 class="fish">Fish Mexico Cuise</h2>
+                            </a>
+                            <div class="SEO">SEO is made up of multiple different elements, and knowing what they</div>
+                            <a href="" class="text-decoration-none" style="color: #78778f;">
+                                <div class="addtocart">Add To Cart</div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- first flying image -->
+
+    <div class="container-fluid">
+        <div id="flyingimage">
+            <img src="https://multim-html.vercel.app/assets/img/restaurent/flying-img1.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        const movingImage = document.getElementById('flyingimage');
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+
+            // Move the image left and right based on scroll position
+            movingImage.style.transform = `translateX(${scrolled / 10 - 50}px)`; // Adjust the division and subtraction values for desired movement
+        });
+
+    </script>
+
+    <!-- today's specials -->
+    <div class="formour container-fluid">
+
+        <div class="fromourtext container">
+
+            <div class="fromourmenu">FROM OUR MENU</div>
+            <div class="Todays">Today’s specials</div>
+            <div class="all">
+                <a href="" class="text-decoration-none">
+                    <div class="all1">All</div>
+                </a>
+                <a href="" class="text-decoration-none">
+                    <div>Lunch</div>
+                </a>
+                <a href="" class="text-decoration-none">
+                    <div>Dinner</div>
+                </a>
+                <a href="" class="text-decoration-none">
+                    <div>Breakfast</div>
+                </a>
+                <a href="" class="text-decoration-none">
+                    <div>Snacks</div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+            <div class="row hello123" style=" margin-left: -87px;">
+                <div class="col-md-6">
+                    <div class="colleft">
+                        <div class="bbq">
+                            <div>
+                                <a href=""><img src="https://multim-html.vercel.app/assets/img/restaurent/item1.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="bbgtext">
+                                <a href="" class="text-decoration-none">
+                                    <div class="bbqsheek">BBQ Sheek Kebab</div>
+                                </a>
+                                <div class="bbqclassic" style="width: 19rem;">Classic greek salad, Barrel aged feta
+                                    cheese,
+                                    Cream</div>
+                                <div class="bbqdollorandrating" style="display: flex; gap: 8rem;">
+                                    <div class="bbqdollor">$10.00</div>
+                                    <div class="rating" style="display: flex;">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bbq">
+                            <div>
+                                <a href=""><img src="https://multim-html.vercel.app/assets/img/restaurent/item1.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="bbgtext">
+                                <a href="" class="text-decoration-none">
+                                    <div class="bbqsheek">BBQ Sheek Kebab</div>
+                                </a>
+                                <div class="bbqclassic" style="width: 19rem;">Classic greek salad, Barrel aged feta
+                                    cheese,
+                                    Cream</div>
+                                <div class="bbqdollorandrating" style="display: flex; gap: 8rem;">
+                                    <div class="bbqdollor">$10.00</div>
+                                    <div class="rating" style="display: flex;">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bbq">
+                            <div>
+                                <a href=""><img src="https://multim-html.vercel.app/assets/img/restaurent/item1.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="bbgtext">
+                                <a href="" class="text-decoration-none">
+                                    <div class="bbqsheek">BBQ Sheek Kebab</div>
+                                </a>
+                                <div class="bbqclassic" style="width: 19rem;">Classic greek salad, Barrel aged feta
+                                    cheese,
+                                    Cream</div>
+                                <div class="bbqdollorandrating" style="display: flex; gap: 8rem;">
+                                    <div class="bbqdollor">$10.00</div>
+                                    <div class="rating" style="display: flex;">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-6">
+                    <div class="colright">
+                        <div class="bbq">
+                            <div>
+                                <a href=""><img src="https://multim-html.vercel.app/assets/img/restaurent/item1.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="bbgtext">
+                                <a href="" class="text-decoration-none">
+                                    <div class="bbqsheek">BBQ Sheek Kebab</div>
+                                </a>
+                                <div class="bbqclassic" style="width: 19rem;">Classic greek salad, Barrel aged feta
+                                    cheese,
+                                    Cream</div>
+                                <div class="bbqdollorandrating" style="display: flex; gap: 8rem;">
+                                    <div class="bbqdollor">$10.00</div>
+                                    <div class="rating" style="display: flex;">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bbq">
+                            <div>
+                                <a href=""><img src="https://multim-html.vercel.app/assets/img/restaurent/item1.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="bbgtext">
+                                <a href="" class="text-decoration-none">
+                                    <div class="bbqsheek">BBQ Sheek Kebab</div>
+                                </a>
+                                <div class="bbqclassic" style="width: 19rem;">Classic greek salad, Barrel aged feta
+                                    cheese,
+                                    Cream</div>
+                                <div class="bbqdollorandrating" style="display: flex; gap: 8rem;">
+                                    <div class="bbqdollor">$10.00</div>
+                                    <div class="rating" style="display: flex;">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bbq">
+                            <div>
+                                <a href=""><img src="https://multim-html.vercel.app/assets/img/restaurent/item1.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="bbgtext">
+                                <a href="" class="text-decoration-none">
+                                    <div class="bbqsheek">BBQ Sheek Kebab</div>
+                                </a>
+                                <div class="bbqclassic" style="width: 19rem;">Classic greek salad, Barrel aged feta
+                                    cheese,
+                                    Cream</div>
+                                <div class="bbqdollorandrating" style="display: flex; gap: 8rem;">
+                                    <div class="bbqdollor">$10.00</div>
+                                    <div class="rating" style="display: flex;">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- gallery section -->
+
+    <div class="container">
+        <div class="gallery">
+            <div class="ourgallery">Our Gallery</div>
+            <a href="" class="text-decoration-none">
+                <div class="viewmore" style="display: flex; color: red; font-weight: 700;">
+                    <div class="viewmoregalery">View More Gallery</div>
+                    <div style="margin-left: 10px;"><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="galleryimages">
+
+            <div class="row" style="margin-left: -89px;">
+                <div class="col-md-4" style="margin-top: 40px;">
+                    <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery1_lg.jpg" data-fancybox="gallery">
+                        <div class="container1">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery1_lg.jpg" alt="Avatar"
+                                class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div class="plus-sign">
+                                        <div class="horizontal-line"></div>
+                                        <div class="vertical-line"></div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" style="margin-top: 40px;">
+                    <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery2.jpg" data-fancybox="gallery">
+                        <div class="container1">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery2.jpg" alt="Avatar"
+                                class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div class="plus-sign">
+                                        <div class="horizontal-line"></div>
+                                        <div class="vertical-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" style="margin-top: 40px;">
+                    <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery3.jpg" data-fancybox="gallery">
+                        <div class="container1">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery3.jpg" alt="Avatar"
+                                class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div class="plus-sign">
+                                        <div class="horizontal-line"></div>
+                                        <div class="vertical-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" style="margin-top: 40px;">
+                    <a href="	https://multim-html.vercel.app/assets/img/restaurent/gallery4.jpg" data-fancybox="gallery">
+                        <div class="container1">
+                            <img src="	https://multim-html.vercel.app/assets/img/restaurent/gallery4.jpg" alt="Avatar"
+                                class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div class="plus-sign">
+                                        <div class="horizontal-line"></div>
+                                        <div class="vertical-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" style="margin-top: 40px;">
+                    <a href="	https://multim-html.vercel.app/assets/img/restaurent/gallery5.jpg" data-fancybox="gallery">
+                        <div class="container1">
+                            <img src="	https://multim-html.vercel.app/assets/img/restaurent/gallery5.jpg" alt="Avatar"
+                                class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div class="plus-sign">
+                                        <div class="horizontal-line"></div>
+                                        <div class="vertical-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" style="margin-top: 40px;">
+                    <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery6.jpg" data-fancybox="gallery">
+                        <div class="container1">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery6.jpg" alt="Avatar"
+                                class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div class="plus-sign">
+                                        <div class="horizontal-line"></div>
+                                        <div class="vertical-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // $(document).ready(function () {
+        //     $("[data-fancybox]").fancybox({
+                
+        //     });
+        // });
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        Slideshow: {
+          playOnStart: true,
+        },
+      });    
+ 
+
+    </script>
+
+    <!-- book table section -->
+    <div class="container-fluid">
+        <div class="booktable">
+            <div class="table" id="table" style="display: flex; flex-direction: column; gap: 4rem; ">
+                <div class="booktableheading">Book your table</div>
+                <div class="tabletext" style="margin-top: -23px !important; margin-left: 40px;">
+                    <div class="openinghour"
+                        style="display: flex; gap: 5pxrem; flex-direction: column; margin-top: -26px;">
+                        <div>
+                            <p>Opening Hours</p>
+                        </div>
+                        <div class="hours" style="color: #78778f;">09:00 am - 10:00 pm(Mon-Sat)</div>
+                    </div>
+                    <div class="Calaus">
+                        <div>
+                            <p>Call Us</p>
+                        </div>
+                        <div style="color: #78778f;">1234-4567 789</div>
+                    </div>
+                    <div class="sendmessage">
+                        <div>
+                            <p>Send Messages</p>
+                        </div>
+                        <div style="color: #78778f;">mailusto@gmail.com</div>
+                    </div>
+                    <div class="booknow">
+                        <div type="button" class="btn2" style="display: flex; gap: 10px; background-color: red;">
+                            <div>Book Now</div>
+                            <div class="button1"><i class="fas fa-angle-double-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <script>
+                const movingImage1 = document.getElementById('table');
+
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.scrollY;
+
+                    // Move the image left and right based on scroll position
+                    movingImage1.style.transform = `translateX(${scrolled / 10 - 50}px)`; // Adjust the division and subtraction values for desired movement
+                });
+
+            </script>
+        </div>
+    </div>
+
+    <!-- second flying image -->
+
+    <div id="flyingimage1" class="fly">
+        <img src="https://multim-html.vercel.app/assets/img/restaurent/flying-img3.png" alt="">
+    </div>
+    <script>
+        const movingImage123 = document.getElementById('flyingimage1');
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+
+            // Move the image left and right based on scroll position
+            movingImage123.style.transform = `translateY(${scrolled / 10 - 50}px)`; // Adjust the division and subtraction values for desired movement
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+    <!-- testimonial section -->
+
+
+    <div class="testimonial" style="margin-left: 67px;margin-top: 111px;">
+        <div style="color: red; font-weight: bold;font-size: 18px;
+        margin-bottom: 10px;
+        letter-spacing: 2px">
+            TESTIMONIAL</div>
+
+        <div class="whatcustomer">What customer say</div>
+
+
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonialbody" style="margin-top: 50px;">
+                        <div class="testimonialimage">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/avatar1.jpg" alt="">
+                        </div>
+
+                        <div class="testimonialtext">
+
+
+                            <div class="rating1" style="display: flex; margin-top:100px;">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class=" carousel-caption d-block w-100">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam illo, sequi nemo
+                                exercitationem in
+                                reprehenderit, quibusdam itaque est voluptate quae enim natus quaerat, temporibus
+                                debitis suscipit
+                                inventore minima vero voluptatum!lorem</div>
+                            <div class="jessica" style="color: black;">Jessica Jessy</div>
+                            <div class="nyc" style="margin-top: -25px !important;">NYC,USA</div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonialbody" style="margin-top: 50px;">
+                        <div class="testimonialimage">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/avatar1.jpg" alt="">
+                        </div>
+
+                        <div class="testimonialtext">
+
+
+                            <div class="rating" style="display: flex; margin-top:100px;">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class=" carousel-caption d-block w-100">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam illo, sequi nemo
+                                exercitationem in
+                                reprehenderit, quibusdam itaque est voluptate quae enim natus quaerat, temporibus
+                                debitis suscipit
+                                inventore minima vero voluptatum!lorem</div>
+                            <div style="color: black;">Jessica Jessy</div>
+                            <div style="margin-top: -25px !important;">NYC,USA</div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonialbody" style="margin-top: 50px;">
+                        <div class="testimonialimage">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/avatar1.jpg" alt="">
+                        </div>
+
+                        <div class="testimonialtext">
+
+
+                            <div class="rating" style="display: flex; margin-top:100px;">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class=" carousel-caption d-block w-100">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam illo, sequi nemo
+                                exercitationem in
+                                reprehenderit, quibusdam itaque est voluptate quae enim natus quaerat, temporibus
+                                debitis suscipit
+                                inventore minima vero voluptatum!lorem</div>
+                            <div style="color: black;">Jessica Jessy</div>
+                            <div style="margin-top: -25px !important;">NYC,USA</div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="" aria-hidden="true">
+
+                </span>
+                <span class=""> <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="position: absolute;
+                    margin-top: -19px;
+                    margin-left: -16px;
+                    margin-right: 19px;">
+                        <path d="m9 19 1.41-1.41L5.83 13H22v-2H5.83l4.59-4.59L9 5l-7 7 7 7z"></path>
+                    </svg></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="" aria-hidden="true">
+
+                </span>
+                <span class=""> <svg viewBox="0 0 24 24" fill="currentColor" style="position: absolute;
+                    margin-top: -19px;
+                    margin-left: -16px;
+                    margin-right: 19px;">
+                        <path d="m15 5-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"></path>
+                    </svg></span>
+            </button>
+        </div>
+
+
+
+    </div>
+
+    <!-- third flying image -->
+
+    <div id="flyingimage2" class="fly">
+        <img src="https://multim-html.vercel.app/assets/img/restaurent/flying-img2.png" alt="">
+
+    </div>
+    <script>
+        window.onscroll = function () {
+            scrollRotate();
+        };
+
+        function scrollRotate() {
+            let image = document.getElementById("flyingimage2");
+            image.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
+        }
+
+    </script>
+
+
+
+
+
+    <!-- chef section -->
+
+    <div class="chefs">
+        <div class="ourchefs" style="color: red; font-weight: 600;margin-left: 400px;">OUR CHEFS</div>
+        <div class="meetour">Meet our chefs</div>
+        <div class="chefgallery">
+            <div class="gellery1" style="position: relative;"><img
+                    src="https://multim-html.vercel.app/assets/img/restaurent/member1.jpg" alt="">
+                <div class="chefname">
+
+                    <p>Jonathon Doe</p>
+                    <div class="social-icons" style="margin-top: 10px;">
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gellery1" style="position: relative;"><img
+                    src="https://multim-html.vercel.app/assets/img/restaurent/member1.jpg" alt="">
+                <div class="chefname">
+                    <p>Jonathon Doe</p>
+                    <div class="social-icons" style="margin-top: 10px;">
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gellery1" style="position: relative;"><img
+                    src="https://multim-html.vercel.app/assets/img/restaurent/member1.jpg" alt="">
+                <div class="chefname">
+                    <p>Jonathon Doe</p>
+                    <div class="social-icons" style="margin-top: 10px;">
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                        <a href="" class="text-decoration-none"><i class='far fa-comment'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- fourth flying image -->
+    <div id="flyingimage3" class="fly">
+        <img src="	https://multim-html.vercel.app/assets/img/restaurent/flying-img5.png" alt="">
+    </div>
+
+
+
+
+    <script>
+        const movingImage1234 = document.getElementById('flyingimage3');
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+
+            // Move the image left and right based on scroll position
+            movingImage1234.style.transform = `translateY(${scrolled / 10 - 50}px)`; // Adjust the division and subtraction values for desired movement
+        });
+
+    </script>
+
+    <!-- fifth flying image -->
+
+    <div id="flyingimage4" class="fly">
+        <img src="	https://multim-html.vercel.app/assets/img/restaurent/flying-img4.png" alt="">
+    </div>
+
+
+
+    <script>
+        const movingImage12345 = document.getElementById('flyingimage4');
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+
+
+            movingImage12345.style.transform = `translateX(${scrolled / 10 - 50}px)`;
+        });
+
+    </script>
+
+
+
+    <!-- footer section -->
+
+    <footer class="container-fluid"
+        style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.04)34%,rgba(252, 125, 28, 0.05) 34%);">
+        <div class="footercontent container" style="display: flex; justify-content: center;">
+            <div class="footerleft">
+                <div class="footerleftcontent">
+
+                    <div><img src="https://multim-html.vercel.app/assets/img/restaurent/footer-logo.svg" alt="">
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <div><i class="cs-primary_color far fa-envelope-open"></i></div>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div>yourmail@gmail.com</div>
+                            <div>support@multim.com</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;gap: 10px;">
+                        <div><i class="cs-primary_color fas fa-phone"></i></div>
+                        <div style="display: flex; flex-direction: column;gap: 10px;">
+                            <div>(1234) 567 8901</div>
+                            <div>(1234) 567 8901</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;gap: 10px;">
+                        <div><i class="cs-primary_color fas fa-map-marker-alt"></i></div>
+                        <div style="display: flex; flex-direction: column;gap: 10px;">
+                            <div>Champ de Mars, 5 Avenue</div>
+                            <div>Anatole, 75007 Paris, France</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightfootertext" style="width: 100%;">
+                <div class="footerrightcontent">
+                    <div class="explore" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="explore1">Explore</div>
+                        <div class="addtocart1" style="margin-top: 30px;">Food</div>
+                        <div class="addtocart1">Drinks</div>
+                        <div class="addtocart1">pizza</div>
+                        <div class="addtocart1">dessert</div>
+                    </div>
+                    <div class="company" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="explore1">Company</div>
+                        <div class="addtocart1" style="margin-top: 30px;">Food</div>
+                        <div class="addtocart1">Drinks</div>
+                        <div class="addtocart1">pizza</div>
+                        <div class="addtocart1">dessert</div>
+                    </div>
+                    <div class="Follow us" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="explore1">Follow Us</div>
+                        <div class="addtocart1" style="margin-top: 30px;">Food</div>
+                        <div class="addtocart1">Drinks</div>
+                        <div class="addtocart1">pizza</div>
+                        <div class="addtocart1">dessert</div>
+                    </div>
+
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023. All rights reserved by Multim</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.17/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

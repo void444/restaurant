@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar1">
+            <div class="container">
+                <a class="navbar-brand navbar-logo" href="#"; style="margin-left: 6%;;">
+                    <img src="	https://multim-html.vercel.app/assets/img/restaurent/logo.svg" alt="" style="height: 3rem;"
+                    >
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto" style="margin-left: 20rem;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+       
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-bag"></i> -->
+                                <!-- <span class="span"></span> -->
+                            <!-- </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div type="button" class="btn">Get Started</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="nav2">
+        <div class="top-bar" style="display: flex; flex-direction: row;">
+            <div><img src="	https://multim-html.vercel.app/assets/img/restaurent/logo.svg" alt=""></div>
+            <!-- <div class="login1">login</div>
+            <div class="bag">
+                <i class=" fas1 fas fa-shopping-bag"></i>
+                <span class="span1"></span>
+            </div> -->
+            <div class="menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" data-bs-backdrop="false"
+                aria-labelledby="offcanvasTopLabel" style="margin-top: 60px;">
+                <div class="offcanvas-body" style="background: #ffffff; height: auto; overflow-y: visible;">
+
+
+                    <div id="accordion accordion1">
+                    
+                        </div> 
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="index.html" class="text-decoration-none"style="color:black">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                 Home
+                                </button></a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="menu.html" class="text-decoration-none"style="color:black">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                 Menu
+                                </button></a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="contactus.html" class="text-decoration-none"style="color:black">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                 Contact Us
+                                </button></a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne4">
+                                <a href="gallery.html" class="text-decoration-none"style="color:black">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo111" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                 Gallery
+                                </button></a>
+                            </h2>
+                        </div>
+                    </div>
+
+
+                 
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 10) {
+            navbar.style.backgroundColor = 'white'; 
+        } else {
+            navbar.style.backgroundColor = 'rgba(252, 125, 28, 0.1)'; /* Initial color when not scrolling */
+        }
+    });
+});
+
+    </script>
+
+
+    <div class="hero">
+
+<div class="container" style="display: flex; gap: 90px;">
+        <div class="herotext">
+            <div class="contactus">Gallery</div>
+            <div style="display: flex;">
+                <div class="home"><u>HOME</u></div>
+                <div>-</div>
+                <div class="contact">GALLERY</div>
+            </div>
+        </div>
+
+        <div class="heroimage">
+            <div>
+                <div
+                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                    <div class="heroimage1">
+                        <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img.png" alt="">
+                    </div>
+                    <div class="images">
+                        <div class="image1">
+                            <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img1.png" alt="">
+                        </div>
+
+                        <div class="image2">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img2.png" alt="">
+                        </div>
+                        <div class="image3">
+                            <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img3.png" alt="">
+                        </div>
+
+                        <div class="image4">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img4.png" alt="">
+                        </div>
+
+                        <div class="image5">
+                            <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img5.png" alt="">
+                        </div>
+
+                        <div class="image6">
+                            <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img6.png" alt="">
+                        </div>
+
+                        <div class="image7">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img7.png" alt="">
+                        </div>
+                        <div class="image8">
+                            <img src="	https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img8.png" alt="">
+                        </div>
+                        <div class="image9">
+                            <img src="https://multim-html.vercel.app/assets/img/restaurent/hero/hero-img9.png" alt="">
+                        </div>
+                    </div>
+
+                    <script>
+                        window.addEventListener('scroll', function () {
+                            const scrollTop = window.scrollY;
+                            const shakingElement = document.querySelector('.images');
+                            const shakeAmount = 5; // Adjust this value to change the shaking intensity
+
+                            shakingElement.style.transform = `translate(-50%, -50%) scale(${1 + Math.sin(scrollTop / 50) * (shakeAmount / 100)})`;
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="container">
+<div class="whitespace">
+    
+</div></div>
+    <div class="galleryimages container">
+        <div class="row" style="    margin-left: -90px;
+        margin-right: -70px;">
+            <div class="col-md-4" style="margin-top: 40px;">
+                <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery1_lg.jpg" data-fancybox="gallery">
+                    <div class="container1">
+                        <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery1_lg.jpg" alt="Avatar"
+                            class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="plus-sign">
+                                    <div class="horizontal-line"></div>
+                                    <div class="vertical-line"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 40px;">
+                <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery2.jpg" data-fancybox="gallery">
+                    <div class="container1">
+                        <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery2.jpg" alt="Avatar"
+                            class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="plus-sign">
+                                    <div class="horizontal-line"></div>
+                                    <div class="vertical-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 40px;">
+                <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery3.jpg" data-fancybox="gallery">
+                    <div class="container1">
+                        <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery3.jpg" alt="Avatar"
+                            class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="plus-sign">
+                                    <div class="horizontal-line"></div>
+                                    <div class="vertical-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 40px;">
+                <a href="	https://multim-html.vercel.app/assets/img/restaurent/gallery4.jpg" data-fancybox="gallery">
+                    <div class="container1">
+                        <img src="	https://multim-html.vercel.app/assets/img/restaurent/gallery4.jpg" alt="Avatar"
+                            class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="plus-sign">
+                                    <div class="horizontal-line"></div>
+                                    <div class="vertical-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 40px;">
+                <a href="	https://multim-html.vercel.app/assets/img/restaurent/gallery5.jpg" data-fancybox="gallery">
+                    <div class="container1">
+                        <img src="	https://multim-html.vercel.app/assets/img/restaurent/gallery5.jpg" alt="Avatar"
+                            class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="plus-sign">
+                                    <div class="horizontal-line"></div>
+                                    <div class="vertical-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 40px;">
+                <a href="https://multim-html.vercel.app/assets/img/restaurent/gallery6.jpg" data-fancybox="gallery">
+                    <div class="container1">
+                        <img src="https://multim-html.vercel.app/assets/img/restaurent/gallery6.jpg" alt="Avatar"
+                            class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="plus-sign">
+                                    <div class="horizontal-line"></div>
+                                    <div class="vertical-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        // $(document).ready(function () {
+        //     $("[data-fancybox]").fancybox({
+                
+        //     });
+        // });
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        Slideshow: {
+          playOnStart: true,
+        },
+      });    
+ 
+
+    </script>
+
+     
+
+    
+
+
+
+<div class="container">
+    <div class="sendmessage" type="button">
+        <div>Load More</div>
+        <div class="fasss"><i class=" fas1 fas fa-angle-double-right"></i></div>
+      </div>
+      </div>
+
+
+
+
+
+      <footer class = "container-fluid" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.04)34%,rgba(252, 125, 28, 0.05) 34%);">
+        <div class="footercontent container" style="display: flex; justify-content: center;">
+            <div class="footerleft">
+                <div class="footerleftcontent">
+
+                    <div><img src="https://multim-html.vercel.app/assets/img/restaurent/footer-logo.svg" alt="">
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <div><i class="cs-primary_color far fa-envelope-open"></i></div>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div>yourmail@gmail.com</div>
+                            <div>support@multim.com</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;gap: 10px;">
+                        <div><i class="cs-primary_color fas fa-phone"></i></div>
+                        <div style="display: flex; flex-direction: column;gap: 10px;">
+                            <div>(1234) 567 8901</div>
+                            <div>(1234) 567 8901</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;gap: 10px;">
+                        <div><i class="cs-primary_color fas fa-map-marker-alt"></i></div>
+                        <div style="display: flex; flex-direction: column;gap: 10px;">
+                            <div>Champ de Mars, 5 Avenue</div>
+                            <div>Anatole, 75007 Paris, France</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightfootertext" style="width: 100%;">
+                <div class="footerrightcontent">
+                    <div class="explore" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="explore1">Explore</div>
+                        <div class="addtocart1" style="margin-top: 30px;">Food</div>
+                        <div class="addtocart1">Drinks</div>
+                        <div class="addtocart1">pizza</div>
+                        <div class="addtocart1">dessert</div>
+                    </div>
+                    <div class="company" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="explore1">Company</div>
+                        <div class="addtocart1" style="margin-top: 30px;">Food</div>
+                        <div class="addtocart1">Drinks</div>
+                        <div class="addtocart1">pizza</div>
+                        <div class="addtocart1">dessert</div>
+                    </div>
+                    <div class="Follow us" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="explore1">Follow Us</div>
+                        <div class="addtocart1" style="margin-top: 30px;">Food</div>
+                        <div class="addtocart1">Drinks</div>
+                        <div class="addtocart1">pizza</div>
+                        <div class="addtocart1">dessert</div>
+                    </div>
+
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023. All rights reserved by Multim</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.17/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
